@@ -1,23 +1,3 @@
-# Abstraction
-
-![abstraction](images/abstraction.png)
-
-
-# Encapsulation
-
-![abstraction](images/encapsulation.png)
-
-
-# Inheritance
-
-![inheritance](images/inheritance.png)
-
-
-## Tests related to a simple inheritance
-
-Please see the comments in the next code:
-
-```kotlin
 package tests
 
 open class Dog { // open keyword - means that this class can be extended
@@ -54,9 +34,3 @@ fun main() {
     // Yorkshire can jump
     yorkshire.jump()
 }
-```
-
-
-# Polymorphism
-
-![polymorphism](images/polymorphism.png)
