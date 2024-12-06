@@ -11,3 +11,8 @@
 # Inheritance
 
 ![inheritance](images/inheritance.png)
+
+
+# Polymorphism
+
+![polymorphism](images/polymorphism.png)
