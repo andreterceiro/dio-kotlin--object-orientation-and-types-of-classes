@@ -91,6 +91,28 @@ fun main() {
 }
 ```
 
+Other possibility is to pass an argument to the constructor of the parent class:
+
+```kotlin
+package tests
+
+open class Lion(val name: String, val origin: String) {
+    fun sayHello() {
+        print("$name, the lion from $origin")
+    }
+}
+
+class Asiatic(name: String): Lion(name = name, origin = "India")
+
+fun main() {
+    val lion:Lion = Asiatic("Rufo")
+    lion.sayHello()
+}
+```
+
+As you can see, the `Asiatic`, it does not have receives 2 parameters in the constructor. name does not have an identifier var or val and it does not receives origin. It pass to constructor of the parent class a fixed value "India"
+
+
 # Polymorphism
 
 ![polymorphism](images/polymorphism.png)
