@@ -116,3 +116,12 @@ As you can see, the `Asiatic`, it does not have receives 2 parameters in the con
 # Polymorphism
 
 ![polymorphism](images/polymorphism.png)
+
+
+# Data Classes
+
+Automatically implements some methods, as example:
+- `equals()`
+- `hashCode()`
+- `toString()`
+- 
