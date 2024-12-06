@@ -194,3 +194,12 @@ fun main () {
     print(Color.YELLOW.containsRed())
 }
 ```
+
+
+# Sealed classes
+
+Please see the followin example:
+
+![sealed classes](images/sealed-classes.png)
+
+What is more important of sealed classes is that they only allow extensions in classes of the same package. In the example you can see aspects of object oriented programming, like polymorphism.
