@@ -259,3 +259,26 @@ fun main() {
 ```
 
 Different of the previous thing that we studied (object expression), in this case the object must be in the global scope.
+
+
+## Companion objects
+
+"Companion" is translated to portuguese as "companheiro". You have an object inside another object, and you can access the functions in the inner object through the outer object. But you must use the keywork "companion", see:
+
+```kotlin
+package tests
+
+class Log {
+    companion object Terminal {
+        fun prnt(message: String) {
+            print(message)
+        }
+    }
+}
+
+fun main() {
+    Log.prnt("This is my log message")
+}
+```
+
+Again, the class must be in the global scope.
