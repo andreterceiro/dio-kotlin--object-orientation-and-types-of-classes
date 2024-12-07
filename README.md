@@ -203,3 +203,31 @@ Please see the followin example:
 ![sealed classes](images/sealed-classes.png)
 
 What is more important of sealed classes is that they only allow extensions in classes of the same package. In the example you can see aspects of object oriented programming, like polymorphism.
+
+
+## Object expression
+
+Please see [this code](https://pl.kotl.in/jnHJ7wsRH1) in Kotlin Playground:
+
+```kotlin
+package tests
+
+fun main() {
+    val obj = object { // see the keyword 'object'
+        var name: String = "André" // no quotes
+        var age: Int = 45
+        var sons:Int = 1
+
+        fun greet() { // Ou can create functions in the object
+            println("Hi")
+        }
+    }
+    println(obj.name)
+    println(obj.age)
+    obj.greet()
+    print(obj)
+}    
+
+```
+
+To the previous code works, obj must have the same function scope of the "printlns"; 
