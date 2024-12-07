@@ -230,4 +230,32 @@ fun main() {
 
 ```
 
-To the previous code works, obj must have the same function scope of the "printlns"; 
+To the previous code works, obj must have the same function scope of the "printlns";
+
+
+## Object declaration
+
+This way you can create an object like a singleton this way:
+
+```kotlin
+package tests
+
+object Unique {
+    var idade:Int = 45
+    val name = "André"
+
+    fun sayHello() {
+        print("Hello!")
+    }
+}
+
+fun main() {
+    Unique.sayHello()
+    print(" -- ")
+    print(Unique.name)
+    print(" -- ")    
+    print(Unique.idade)
+}
+```
+
+Different of the previous thing that we studied (object expression), in this case the object must be in the global scope.
